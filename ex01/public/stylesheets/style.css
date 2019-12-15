@@ -43,6 +43,10 @@ a:hover {
   background-color: #1EA4FF !important;
   color: #eee !important; }
 
+.card {
+  width: auto;
+  text-align: center; }
+
 #jumbotron_content > input {
   margin: 1em; }
 

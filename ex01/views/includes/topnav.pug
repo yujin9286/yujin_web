@@ -8,9 +8,9 @@
       #navbarsExampleDefault.collapse.navbar-collapse
         ul.navbar-nav.ml-auto
           li.nav-item
-            a.nav-link(href="/questions") 파트너등록하기
+            a.nav-link(href="/questions") 상품 등록하기
           li.nav-item
-            a.nav-link(href="/users") Users
+            a.nav-link(href="/users") 목록
           if (!currentUser) 
             li.nav-item
               a.nav-link(href='/signin') 로그인
@@ -18,37 +18,11 @@
               a.nav-link(href='/users/new') 회원가입
           else
             li.nav-item
-              a.nav-link(href=`/users/${currentUser._id}`) My Profile
+              a.nav-link(href=`/users/${currentUser._id}`) 내정보
             li.nav-item
-              a.nav-link(href='/signout') Signout
+              a.nav-link(href='/signout') 로그아웃
 
-  //nav.navbar.navbar-expand-md.navbar-dark.bg-dark.fixed-top
-    .container2
-      a.navbar-brand(href="/") pp
-      button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarsExampleDefault", aria-controls="navbarsExampleDefault", aria-expanded="false", aria-label="Toggle navigation")
-        span.navbar-toggler-icon   
-
-      #navbarsExampleDefault.collapse.navbar-collapse
-        ul.navbar-nav.ml-auto
-          li.nav-item
-            a.nav-link(href="#") 투어/티켓
-          li.nav-item
-            a.nav-link(href="#") 항공권
-          li.nav-item
-            a.nav-link(href="#") 숙소
-          li.nav-item
-            a.nav-link(href="#") 특가여행
-          li.nav-item
-            a.nav-link(href="#") 패키지
-          li.nav-item
-            a.nav-link(href="#") 여행자보험
-          li.nav-item
-            a.nav-link(href="#") 여행준비            
-      
-  //nav.nav
-    a.nav-link(href="#") active
-    a.nav-link(href="#") link
-    a.nav-link(href="#") active
+  
     
 .container2
   ul.nav.justify-content-center

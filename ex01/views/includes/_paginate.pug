@@ -18,9 +18,9 @@ mixin paginate(docs, link, params)
     nav(aria-label="page navigation")
       ul.pagination
         li.page-item(class= (1 === docs.page) && 'disabled')
-          a.page-link(href= url + (docs.page - 1), tabindex='-1') Prev
+          a.page-link(href= url + (docs.page - 1), tabindex='-1') 이전
         - for(let p = start; p <= end; p++)
           li.page-item(class= (p === docs.page) && 'active')
             a.page-link(href= url + p)= p
         li.page-item(class= (docs.pages === docs.page) && 'disabled')
-          a.page-link(href= url + (docs.page + 1), tabindex='-1') Next
+          a.page-link(href= url + (docs.page + 1), tabindex='-1') 다음

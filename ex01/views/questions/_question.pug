@@ -6,12 +6,12 @@
 .row
   .col-sm
     .numbers.
-      #[span.number.num-likes= question.numLikes] likes,
-      #[span.number.num-answers= question.numAnswers] answers,
-      #[span.number.num-reads= question.numReads] reads
+      #[span.number.num-likes= question.numLikes] 좋아요,
+      #[span.number.num-answers= question.numAnswers] 댓글,
+      #[span.number.num-reads= question.numReads] 조회
   .col-sm
     .author
-      | asked on #{moment(question.createdAt).format('YYYY-MM-DD')}
+      | 작성 #{moment(question.createdAt).format('YYYY-MM-DD')}
       if question.author
         | 
         | by #[a(href=`/users/${question.author.id}`)= question.author.name] 

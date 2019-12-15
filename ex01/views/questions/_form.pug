@@ -1,9 +1,9 @@
 .form-group
-  label(for="title") Title
-  input.form-control(type="text", name="title", placeholder="What's your question?", value=question.title)
+  label(for="title") 투어 상품
+  input.form-control(type="text", name="title", placeholder="투어 상품을 입력하세요", value=question.title)
 .form-group
-  label(for="question") Question
+  label(for="question") 투어 내용
   textarea.form-control(name="content", rows="5")= question.content
 .form-group
-  label(for="tags") Tags
-  input.form-control(type="text", name="tags", placeholder="tags separated by spaces", value=question.tags ? question.tags.join(" ") : "")
+  label(for="tags") 키워드
+  input.form-control(type="text", name="tags", placeholder="스페이스로 키워드를 입력하세요", value=question.tags ? question.tags.join(" ") : "")
